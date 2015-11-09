@@ -20,7 +20,7 @@ import 'dart:html' as html;
 import 'package:polymer/polymer.dart';
 import 'package:test/test.dart';
 
-import 'package:dogma_polymer/model_element.dart';
+import 'package:dogma_polymer/src/model/model_element.dart';
 
 import 'src/test_model.dart';
 import 'src/test_model_element.dart';
@@ -39,7 +39,6 @@ Future<Null> main() async {
   var subscription;
 
   setUp(() {
-    print('SET UP');
     events = <html.CustomEvent>[];
     subscription = html.window.on[ModelElement.modelChangedEvent].listen(
         (event) { events.add(event); }
@@ -47,7 +46,6 @@ Future<Null> main() async {
   });
 
   tearDown(() {
-    print('TEAR DOWN');
     subscription.cancel();
   });
 

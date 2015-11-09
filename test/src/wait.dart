@@ -15,6 +15,9 @@ import 'dart:async';
 // Library contents
 //---------------------------------------------------------------------
 
+/// Waits for the specified number of [milliseconds] before returning.
+///
+/// Used to wait with tests that interact with Polymer and the DOM.
 Future wait([int milliseconds = 50]) {
   return new Future.delayed(new Duration(milliseconds: milliseconds));
 }

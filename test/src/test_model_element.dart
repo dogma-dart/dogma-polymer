@@ -16,7 +16,7 @@ import 'dart:html' as html;
 //---------------------------------------------------------------------
 
 import 'package:polymer/polymer.dart';
-import 'package:dogma_polymer/model_element.dart';
+import 'package:dogma_polymer/src/model/model_element.dart';
 
 import 'test_model.dart';
 
